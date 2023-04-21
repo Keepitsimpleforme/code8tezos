@@ -1,15 +1,17 @@
 const sheetId = '18_r4bKXBWPOzDvPTKZ0NPpEBE9IN5Cgbki2BaxxW7FM';
 const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
-const sheetName = 'Sheet1';
+const sheetName = 'Combined';
 const query = encodeURIComponent('Select *')
 const url = `${base}&sheet=${sheetName}&tq=${query}`
 const data = []
+console.log(url)
 document.addEventListener('DOMContentLoaded', init)
+const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
 // const output = document.querySelector('.output')
 const outputheading = document.querySelector("#rankings > thead")
 const output = document.querySelector("#rankings > tbody")
 function init() {
-    fetch(url)
+    fetch(corsAnywhereUrl + url)
         .then(res => res.text())
         .then(rep => {
             //Remove additional text and extract only JSON:
