@@ -9,7 +9,7 @@ html {
 
 body {
   background-color: #1d1443;
-  background-image: url("../img/herosection/layer_3.jpg");
+  background-image: url("../img/herosection/BG1.jpg");
   /* background-attachment: fixed; */
   /* background-size: cover;   */
   font-size: 15px;
@@ -117,12 +117,12 @@ header .container-fluid .row {
 }
 
 .hero-text .buttons a {
-  background: #e928e9;
+  background: #0f61ff;
   margin: 10px 15px 0 0;
 }
 
 .hero-text h1 span {
-  color: #e928e9;
+  color: #0f61ff;
 }
 .hero-text p span {
   line-height: 2.5;
@@ -691,7 +691,7 @@ a.back-to-top i {
   height: 40px;
   line-height: 40px;
   color: #fff;
-  background: #be24e6;
+  background: #a1a7eb;
   border-radius: 0px;
   text-align: center;
   transition: all 0.2s ease-in-out;
@@ -1209,6 +1209,7 @@ a.back-to-top:focus {
   .footer-area {
     height: 200px;
     margin-top: 50px;
+    background:#0f61ff
   }
   .footer-area .code8XTezos {
     /* position: relative;
@@ -1368,6 +1369,18 @@ a.back-to-top:focus {
     	background: rgba(0, 0, 0, 0.5);
     } */
 }
+.participants-say-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+.testimonnial-container{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
 
 .counter-section .counter {
   padding: 30px 0;
@@ -1480,7 +1493,7 @@ a.back-to-top:focus {
 .card-body p:hover {
   padding: 5px 12px;
   border-radius: 50px;
-  background: rgb(241, 46, 241);
+  /* background: rgb(241, 46, 241); */
 }
 @media only screen and (max-width: 600px) {
   .schedule-sidebar {
@@ -1806,8 +1819,8 @@ a.back-to-top:focus {
   letter-spacing: 0.5px;
   text-align: left;
   font-weight: 400;
-  color: #fff;
-  color: #e726e6;
+  color:  #fff;
+  color: #0f61ff;
 }
 
 .services-item .services-content p {
@@ -1817,7 +1830,7 @@ a.back-to-top:focus {
 }
 
 .services-item:hover {
-  background: #fff;
+  background: #a1a7eb;
   color: #232323;
 }
 
@@ -1829,6 +1842,7 @@ a.back-to-top:focus {
   background: transparent;
   color: #232323;
 }
+
 
 /* Gallery Section */
 
@@ -2343,7 +2357,7 @@ a.back-to-top:focus {
 }
 
 .footer-area {
-  background: #b437b9;
+  background: #0f61ff;
   padding: 0 4rem;
   display: flex;
   justify-content: space-between;
@@ -3062,13 +3076,13 @@ figure:hover:after {
 
 figure.tez:hover:after {
   content: url("../img/tez.png");
-  background-color: #e928e9;
+  background-color: #0f61ff;
   color: white;
 }
 figure.code:hover:after {
   content: url("../img/herosection/LOGO\ CODE8\ WHITE (1).png");
   /* width: 150px; */
-  background-color: #e928e9;
+  background-color: #0f61ff;
   color: white;
 }
 
@@ -3093,11 +3107,11 @@ figure figcaption h4 {
 }
 figure.tez figcaption h4 > span {
   padding: 0 15px;
-  background-color: #e928e9;
+  background-color: #0f61ff;
 }
 figure.code figcaption h4 > span {
   padding: 0 15px;
-  background-color: #e928e9;
+  background-color: #0f61ff;
 }
 figure figcaption p {
   margin: 0;
