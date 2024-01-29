@@ -9,7 +9,7 @@ html {
 
 body {
   background-color: #1d1443;
-  background-image: url("../img/herosection/BG1.jpg");
+  background-image: url("../img/herosection/New2.png");
   /* background-attachment: fixed; */
   /* background-size: cover;   */
   font-size: 15px;
@@ -88,7 +88,7 @@ header .container-fluid .row {
 .hero {
   padding: 120px;
   position: relative;
-  /* background-image: url("../img/herosection/layer_3.jpg"); */
+  background-image: url("../img/herosection/New2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -131,14 +131,16 @@ header .container-fluid .row {
 }
 
 .hero-img {
-  padding: 40px 0;
+  padding: 40px 10px;
+  
 }
 
 .hero-img img {
-  width: 420px;
+  width: 520px;
   position: relative;
-  float: right;
-  bottom: 50px;
+  /* float: right; */
+  margin-left: 20px;
+  bottom: 40px;
 }
 
 .hero-heading {
@@ -196,6 +198,7 @@ header .container-fluid .row {
 }
 
 .faq-section {
+  margin-top: 20px;
   padding: 6rem 100px;
 }
 
@@ -297,7 +300,7 @@ header .container-fluid .row {
 }
 
 .sidebar-card {
-  background: #e928e9c5;
+  background: #471be8c5;
   border-radius: 0 3rem 0 0;
   padding: 1rem;
   width: 18rem;
@@ -305,7 +308,7 @@ header .container-fluid .row {
 }
 
 .sidebar-card:hover {
-  background: #c605c6c5;
+  background: #3a0dddc5;
   border-radius: 0 3rem 0 0;
   padding: 1rem;
   width: 18rem;
@@ -329,8 +332,8 @@ header .container-fluid .row {
 }
 
 .schedule {
-  background: url("../img/herosection/rectangle_3_copy.png");
-  padding: 5rem;
+  background: url("../img/herosection/Roadmap\ .png");
+  /* padding: 5rem; */
 }
 
 .schedule-accordion {
@@ -445,6 +448,9 @@ header .container-fluid .row {
 
 #faq .section-title,
 #faq p {
+  padding-top: 100px;
+  position: relative;
+  margin-top: 140px;
   color: #fff;
 }
 
@@ -1369,17 +1375,44 @@ a.back-to-top:focus {
     	background: rgba(0, 0, 0, 0.5);
     } */
 }
-.participants-say-heading {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #fff;
+
+/* Adjust padding for testimonial container */
+.testimonnial-container {
+  padding: 15px 10px;
+  
 }
-.testimonnial-container{
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+
+/* Adjust padding for the carousel inner */
+/* Adjust padding for the entire testimonial container to avoid content touching the edges */
+
+
+/* If needed, adjust padding for individual carousel items */
+#testimonialCarousel .carousel-item {
+  padding: 10px;
+  margin-top: 50px;
+}
+
+/* Add padding for the carousel inner */
+#testimonialCarousel .carousel-inner {
+  padding: 20px;
+}
+
+/* Carousel control button styles */
+.carousel-control-prev,
+.carousel-control-next {
+  /* background-color: blue; Set your desired button color here */
+  padding-top: 140px;
+}
+
+/* Optionally, you can change the color of the control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); 
+  color: #00aced;
+}
+
+.roadmap-schedule{
+  padding: 20px;
 }
 
 .counter-section .counter {
@@ -1455,13 +1488,13 @@ a.back-to-top:focus {
 /* Schedule Tabs Start */
 
 .tab a.active .sidebar-card {
-  background-color: #ffff;
+  background-color: #718ecb;
 }
 .tab a.active .sidebar-title {
-  color: #b437b9;
+  color: #4848ca;
 }
 .tab a.active .sidebar-date {
-  color: #b437b9;
+  color: #3d4baa;
 }
 
 .tabcontent {
@@ -1493,7 +1526,7 @@ a.back-to-top:focus {
 .card-body p:hover {
   padding: 5px 12px;
   border-radius: 50px;
-  /* background: rgb(241, 46, 241); */
+  
 }
 @media only screen and (max-width: 600px) {
   .schedule-sidebar {
@@ -1509,23 +1542,23 @@ a.back-to-top:focus {
     width: 82vw;
   }
   .sidebar-card {
-    background: #e928e9c5;
+    background: #1b15d5c5;
     border-radius: 0 1rem 0 0;
     padding: 0.5rem;
     width: 40vw;
     color: #fff;
   }
   .sidebar-card:hover {
-    background: #c605c6c5;
+    background: #0127c0;
     border-radius: 0 1rem 0 0;
     padding: 0.5rem;
     width: 40vw;
-    color: #fff;
+    color: #3e2586;
   }
 }
 @media screen and (max-width: 700px) {
   .schedule-accordion {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 0 1rem;
@@ -2737,6 +2770,7 @@ a.back-to-top:focus {
 
   .faq-section {
     padding: 10px;
+    padding-top: 10px;
   }
   .card-header {
     padding: 10px !important;
@@ -2851,136 +2885,6 @@ a.back-to-top:focus {
   font-size: 12px;
   margin-right: 5px;
 }
-
-#main-slide .carousel-control {
-  display: none;
-  transition: all 0.3s ease-in-out;
-}
-
-#main-slide .carousel-indicators {
-  cursor: pointer;
-  bottom: 90px;
-}
-
-#main-slide:hover .carousel-control {
-  display: block;
-  transition: all 0.3s ease-in-out;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
-#main-slide .carousel-item img {
-  position: relative;
-  width: 100%;
-}
-
-#main-slide .carousel-inner .carousel-item::after {
-  bottom: 0;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-#main-slide .carousel-item .carousel-caption {
-  opacity: 0;
-  transition: opacity 100ms ease 0s;
-  z-index: 0;
-}
-
-#main-slide .carousel-item .carousel-caption .heading {
-  font-size: 48px;
-  font-weight: 700;
-  color: #e1e5eb;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  margin-top: 30px;
-}
-
-#main-slide .carousel-item .carousel-caption p {
-  font-size: 20px;
-}
-
-#main-slide .carousel-item.active .carousel-caption {
-  opacity: 1;
-  transition: opacity 100ms ease 0s;
-  z-index: 1;
-}
-
-#main-slide .carousel-caption {
-  color: #fff;
-  position: absolute;
-  top: 35%;
-}
-
-#main-slide .carousel-caption .btn {
-  margin: 25px 25px 0px 0px;
-}
-
-#main-slide .carousel-control-next,
-#main-slide .carousel-control-prev {
-  opacity: 1;
-  box-shadow: none;
-}
-
-#main-slide .carousel-control-prev span {
-  padding: 15px;
-}
-
-#main-slide .carousel-control-next span {
-  padding: 15px;
-}
-
-#main-slide .carousel-control {
-  top: 45%;
-}
-
-#main-slide .carousel-control .lni-chevron-left,
-#main-slide .carousel-control .lni-chevron-right {
-  position: absolute;
-  z-index: 5;
-}
-
-#main-slide .carousel-control .lni-chevron-left {
-  left: 15px;
-}
-
-#main-slide .carousel-control .lni-chevron-right {
-  right: 15px;
-}
-
-.carousel-indicators li {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-#main-slide .carousel-control i {
-  line-height: 40px;
-  font-size: 18px;
-  width: 45px;
-  border: 2px solid #fff;
-  height: 45px;
-  display: block;
-  border-radius: 2px;
-  background: transparent;
-  color: #fff;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-}
-
-#main-slide .carousel-control i:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  border-color: #fff;
-}
-
 /*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
@@ -3236,4 +3140,11 @@ figure figcaption p {
 }
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.testimonial-image {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensure the image covers the specified dimensions */
+  border-radius: 50%; /* Make the image circular */
 }
