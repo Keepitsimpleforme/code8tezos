@@ -231,17 +231,16 @@ header .container-fluid .row {
 .about-container {
   text-align: center;
 }
-.container{
-  background: transparent !important
-}
+
 
 .about-title-primary {
   font-size: 1.8rem;
   color: #fff;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   font-weight: 700;
   text-align: center;
-  margin-top: 3rem;
+  padding-top: 40px;
+  /* margin-top: 3rem; */
   padding-bottom: 40px;
 }
 
@@ -461,8 +460,9 @@ header .container-fluid .row {
   margin-top: 10px;
   color: #fff;
 }
-.faq-section{
+.faq-who{
   background: url("../img/herosection/BG1.jpg");
+  margin-top: 50px;
 }
 
 #contact-map .section-title,
@@ -725,7 +725,7 @@ a.back-to-top:focus {
 
 
 .section-padding {
-  padding: 60px;
+  padding: 30px;
   /* background: url("../img/herosection/BG1.jpg");` */
 }
 
@@ -1238,14 +1238,16 @@ a.back-to-top:focus {
     bottom: 70px;
     right: 40px; */
   }
-  .footer-area .queries {
+  .queries {
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: column;
     justify-content: center;
-    /* position: relative; */
-    /* right: 18rem; */
-    /* top: 8px; */
+    position: relative;
+    right: 18rem;
+    top: 8px;
     font-size: 20px;
+    padding-right: 30px;
+    
   }
   .footer-area .queries .mail {
     position: relative;
@@ -1253,6 +1255,7 @@ a.back-to-top:focus {
   }
   .hq {
     height: 20px;
+    padding-top: 80px;
   }
   .footer-social {
     display: flex;
@@ -1380,39 +1383,45 @@ a.back-to-top:focus {
   background: #284b7e;
   overflow: hidden;
   position: relative;
-  /* 
-    &:before{
-    	content: '';
-    	position: absolute;
-    	top: 0;
-    	bottom: 0;
-    	width: 100%;
-    	height: 100%;
-    	background: rgba(0, 0, 0, 0.5);
-    } */
+  
 }
-.testimonial-flex-container {
-  background: transparent !important; /* Set your desired background color */
-  padding: 20px; /* Adjust the padding as needed */
-  /* Add any other styles you want for the flex container */
+#testimonials {
+  min-height: 500px; /* Set a minimum height for the testimonials section */
 }
-
-#testimonialCarousel {
+#testimonialCarousel .card{
   /* Your existing styles for the carousel */
+  background-color: #09096d ;
+  /* padding: 20px 20px; */
+  margin: 10px 10px;
+  
+}
+#testimonialCarousel .card-text,.card-title{
+  /* Your existing styles for the carousel */
+  color: white ;
 }
 
 #testimonialCarousel .carousel-inner {
-  display: flex;
-  flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+  
+  /* Prevent items from wrapping to the next line */
   overflow-x: hidden; /* Enable horizontal scrolling for overflowing items */
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 #testimonialCarousel .carousel-item {
   min-width: 100%; /* Ensure each item takes the full width of the container */
 }
 /* Adjust padding for testimonial container */
-.testimonnial-container {
+.testimonial-container {
   padding: 15px 10px;
+
+  
+}
+#testimonialCarousel .test-body{
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
   
 }
 #testimonialCarousel .carousel-control-prev,
@@ -1420,31 +1429,25 @@ a.back-to-top:focus {
     position: absolute;
     top: 80%; /* Adjust the vertical position as needed */
     transform: translateY(-50%);
-    /* background-color: white;  */
-    /* Add any other styles you want for the buttons */
 }
 
 #testimonialCarousel .carousel-control-prev {
-    left: 0;
+    left: 10%;
 }
 
 #testimonialCarousel .carousel-control-next {
-    right: 0;
+    right: 10%;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(1); 
   color: #00aced;
 }
-
-.roadmap-schedule{
-  padding: 20px;
+.testimonial-image{
+  width: 100px;
+  height: 100px;
 }
 
-.counter-section .counter {
-  padding: 30px 0;
-  transition: all 0.2s ease-in-out;
-}
 
 .counter-section .counter:hover {
   background-color: #fff;
@@ -1785,8 +1788,8 @@ a.back-to-top:focus {
   background-color: #000b21e0;
 }
 
-#who {
-  padding-bottom: 6rem;
+.bottom{
+  padding-bottom: 40px;
 }
 #who h1 {
   padding-bottom: 3rem;
@@ -2733,7 +2736,8 @@ a.back-to-top:focus {
 }
 
 .cLogo {
-  margin-top: 60px;
+  /* align-self: auto; */
+  padding-right: 100px;
 }
 
 @media screen and (max-width: 500px) {
@@ -3167,11 +3171,4 @@ figure figcaption p {
 }
 .slick-arrow.slick-hidden {
   display: none;
-}
-
-.testimonial-image {
-  width: 50px; /* Adjust the width as needed */
-  height: 50px; /* Adjust the height as needed */
-  object-fit: cover; /* Ensure the image covers the specified dimensions */
-  border-radius: 50%; /* Make the image circular */
 }
