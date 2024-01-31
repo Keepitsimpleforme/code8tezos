@@ -1257,7 +1257,6 @@ a.back-to-top:focus {
   }
   .hq {
     height: 20px;
-    padding-top: 80px;
   }
   .footer-social {
     display: flex;
@@ -2454,7 +2453,7 @@ div.carousel-nav-icon > svg {
 }
 
 .footer-contact {
-  padding: 10px;
+  width: 150px;padding: 10px;
   border: 1px solid rgba(252, 252, 252, 0.589);
   border-radius: 60px;
 }
