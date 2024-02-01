@@ -1244,11 +1244,12 @@ a.back-to-top:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
     right: 18rem;
     top: 8px;
     font-size: 20px;
     padding-right: 30px;
+    padding-top: 20px;
     
   }
   .footer-area .queries .mail {
@@ -2430,6 +2431,7 @@ div.carousel-nav-icon > svg {
 .footer-area {
   background: #0f61ff;
   padding: 0 4rem;
+  margin-top: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3024,8 +3026,9 @@ figure.tez:hover:after {
   color: white;
 }
 figure.code:hover:after {
-  content: url("../img/herosection/LOGO\ CODE8\ WHITE (1).png");
-  /* width: 150px; */
+  content: url("../img/herosection/Frame\ 30.png");
+  justify-content: center;
+  padding-left: 10px;
   background-color: #0f61ff;
   color: white;
 }
