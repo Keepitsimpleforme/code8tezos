@@ -3131,8 +3131,9 @@ figure figcaption p {
 .slick-list
 {
   position: relative;
-  display: block;
+  display: grid;
   overflow: hidden;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
